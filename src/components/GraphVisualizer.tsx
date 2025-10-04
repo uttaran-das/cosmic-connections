@@ -18,7 +18,7 @@ const GraphVisualizer: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/graph-data.json');
+        const response = await fetch('graph-data.json');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
